@@ -16,10 +16,30 @@
 
 <body>
   <div class = "container">
+    <form>
+        Search: <input type="text" id="search-term"><br>
+        Number: <input type="text" id="num-records"><br>
+        Start: <input type="text" id="year-start"><br>
+        End: <input type="text" id="year-end"><br>
+    </form>
     <button class="btn btn-success" id="search">Search</button>
-    <button class="btn btn-success" data-animal="flower">flowers</button>
-    <div id="gifs-appear-here">
+    <button class="btn btn-success" id="clear">Clear</button>
+    <div id = "result">
+        <!-- <div class="card-body">
+            <button type="button " class="btn bg-transparent">
+                    <div>
+                        <span class="badge badge-primary float-left">9</span>
+                        <span class="sr-only">unread messages</span>
+                        <h5 class="card-title float-left" id ="article-title"> articles are gooooood</h5>
+                    </div>
+
+            </button>
+
+            <div>Some quick example text to build on the card title and make up the bulk of the card's content.</div> -->
+        </div>
     </div>
+    </div>
+
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="backend.js"></script>
