@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div class="container">
+        <div class = "row firstRow"></div>
+        <div class = "row second">
+            <div class = "col-md-3"></div>
+            <div class = "col-md-6">
+                <div class="card">
+                    <div class="card-body bg-primary bg-large mt-6 mb-6 border">
+                        <p>New York Times Search</p>
+                    </div>
+                </div>
+                <div class= "row empty"></div>
+                <div class = "mt-6 mb-6 border border-primary" id="search-parameters">
+                    <div class="card-body bg-primary bg-large mt-6 mb-6 border">Search Parameters</div>
+                        <form>
+                                <div class="form-group">
+                                <label for="exampleInputEmail1">Search Term</label>
+                                <input type="text" class="form-control" id="search-term" aria-describedby="emailHelp" placeholder="article">
+                                </div>
+
+                                <div class="form-group">
+                                <label for="blalalalbla">Number of records to retreive</label>
+                                <!-- change the type number? -->
+                                <input type="text" class="form-control" id="num-recors" placeholder="number of records">
+                                </div>
+                                <div class="form-group">
+                                        <label for="exampleInputEmail1">Start Year(Optional)</label>
+                                        <input type="text" class="form-control" id="year-start" aria-describedby="emailHelp" placeholder="2002">
+                                </div>
+                
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">End Year (Optional) </label>
+                                        <!-- change the type number? -->
+                                        <input type="text" class="form-control" id="year-end" placeholder="2003">
+                                    </div>
+
+
+
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                                <button type="submit" class="btn btn-primary">Clear</button>
+
+                        </form>
+                </div> 
+                <div class= "row empty"></div>      
+                <div class = "result">
+                <div class="card-body">
+                    <button type="button " class="btn bg-transparent">
+                            <div>
+                                <span class="badge badge-primary float-left" id="result-num">9</span>
+                                <h4 class="card-title float-left" id ="article-title"> Article Title</h4>
+                            </div>
+
+                    </button>
+                    <div id ="authors">Some quick example text to build on the card title and make up the bulk of the card's content.</div>
+                </div>        
+                </div>
+            </div>
+        </div>
+        <div class = "col-md-3"></div>
+</div>
+</body>
+</html>

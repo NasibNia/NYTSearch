@@ -1,0 +1,10 @@
+.card-body{
+    background-color:gray;
+}
+.badge{
+    /* height: 120%; */
+    top : 4px;
+}
+.empty{
+    height:50px;
+}
