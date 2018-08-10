@@ -21,82 +21,59 @@
         <div class = "row second">
             <div class = "col-md-3"></div>
             <div class = "col-md-6">
-
-
-<!-- header -->
-<div class="card">
-        <div class="card-body bg-primary bg-large">
-            <p>New York Times Search</p>
-        </div>
-    </div>
-
-    <div id="search-parameters"> Search Parameters
-
-
-            <form>
-                    <div class="form-group">
-                      <label for="exampleInputEmail1">Search Term</label>
-                      <input type="text" class="form-control" id="search-term" aria-describedby="emailHelp" placeholder="article">
+                <div class="card">
+                    <div class="card-body bg-primary bg-large mt-6 mb-6 border">
+                        <p>New York Times Search</p>
                     </div>
-
-                    <div class="form-group">
-                      <label for="blalalalbla">Number of records to retreive</label>
-                      <!-- change the type number? -->
-                      <input type="text" class="form-control" id="num-recors" placeholder="number of records">
-                    </div>
-                    <div class="form-group">
-                            <label for="exampleInputEmail1">Start Year(Optional)</label>
-                            <input type="text" class="form-control" id="year-start" aria-describedby="emailHelp" placeholder="2002">
-                     </div>
-      
-                          <div class="form-group">
-                            <label for="exampleInputPassword1">End Year (Optional) </label>
-                            <!-- change the type number? -->
-                            <input type="text" class="form-control" id="year-end" placeholder="2003">
-                          </div>
-
-
-
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                    <button type="submit" class="btn btn-primary">Clear</button>
-
-            </form>
-
-                  <!-- New Div for the results section -->
-
-                  <div class = "result">
-                    <div class="card-body">
-                        <button type="button " class="btn bg-transparent">
-                                <div>
-                                    <span class="badge badge-primary float-left">9</span>
-                                    <span class="sr-only">unread messages</span>
-                                    <h5 class="card-title float-left" id ="article-title"> articles are gooooood</h5>
+                </div>
+                <div class= "row empty"></div>
+                <div class = "mt-6 mb-6" id="search-parameters">
+                    <div class="card-body bg-primary bg-large mt-6 mb-6 border">Search Parameters</div>
+                        <form>
+                                <div class="form-group">
+                                <label for="exampleInputEmail1">Search Term</label>
+                                <input type="text" class="form-control" id="search-term" aria-describedby="emailHelp" placeholder="article">
                                 </div>
 
-                        </button>
+                                <div class="form-group">
+                                <label for="blalalalbla">Number of records to retreive</label>
+                                <!-- change the type number? -->
+                                <input type="text" class="form-control" id="num-recors" placeholder="number of records">
+                                </div>
+                                <div class="form-group">
+                                        <label for="exampleInputEmail1">Start Year(Optional)</label>
+                                        <input type="text" class="form-control" id="year-start" aria-describedby="emailHelp" placeholder="2002">
+                                </div>
+                
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">End Year (Optional) </label>
+                                        <!-- change the type number? -->
+                                        <input type="text" class="form-control" id="year-end" placeholder="2003">
+                                    </div>
 
-                        <div>Some quick example text to build on the card title and make up the bulk of the card's content.</div>
-                    </div>        
-                  </div>
 
 
-    </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                                <button type="submit" class="btn btn-primary">Clear</button>
 
+                        </form>
+                </div> 
+                <div class= "row empty"></div>      
+                <div class = "result">
+                <div class="card-body">
+                    <button type="button " class="btn bg-transparent">
+                            <div>
+                                <span class="badge badge-primary float-left" id="result-num">9</span>
+                                <h4 class="card-title float-left" id ="article-title"> Article Title</h4>
+                            </div>
 
-
-
+                    </button>
+                    <div id ="authors">Some quick example text to build on the card title and make up the bulk of the card's content.</div>
+                </div>        
+                </div>
             </div>
-            <div class = "col-md-3"></div>
         </div>
-
-
-            
-    </div>
-    
-    
-
-    <!-- form -->
-    <div id="results"></div>
-    
+        <div class = "col-md-3"></div>
+</div>
 </body>
 </html>
